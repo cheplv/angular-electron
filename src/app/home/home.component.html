@@ -2,4 +2,11 @@
   <h1 class="title">
     {{ 'PAGES.HOME.TITLE' | translate }}
   </h1>
+  <div>
+  	<form name="jimpForm">
+  		<div><input type="text" name="url" [(ngModel)]="url" /><button type="button" (click)="selectFile()" >Select file</button></div>
+  		<div><button type="button" (click)="processFile()" >Process JIMP</button></div>
+  		
+  	</form>
+  </div>
 </div>
